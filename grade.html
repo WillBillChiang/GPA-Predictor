@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico"/>
+    <title>Grade Calculator</title>
+    <meta name="google-site-verification" content="4nN9dXFWSy49NoKDzGPkaWFxGjM8-vjlmDCveMbwUsI" />
+    <meta name="keywords" content = "high school, GPA, gpa, broward, broward county, predictor, gpa predictor, GPA predictor, cypress bay, grade, calculator, grade calculator, semester grade, calculator, semester grade calculator, cypress bay grade, stress, calculator, predictor">
+    <meta name="language" content="English"> 
+    <meta charset="utf-8">
+    <meta name="description" content="This grade calculator was created to allow students in Broward County Public Schools and Cypress Bay to calculate and predict how an assignment will impact their grade.">
+    <meta name="author" content="William C">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <script src="script.js"></script>
+  <body>
+    <div class="bar"></div>
+    <br>
+    <h1 class="heading" id="top"> Grade Calculator </h1>
+    <nav>
+      <ul class = "pagebar">
+        <a class = "pages" href="about.html"> About Me </a></li>
+        <a class = "pages" href="index.html"> GPA Predictor </a></li>
+        <a class = "pages" href="semester.html"> Semester Grade </a></li>
+      </ul>
+    </nav>
+    <hr> <br>
+    <div class="input1">
+      <form id="currentGrade">
+        Current Grade:<br>
+        <input type="number" placeholder="Enter" step="0.1" name="cgrade"><br>
+        Current Total Points:<br>
+        <input type="number" placeholder="Enter" name="cpoints" step="1">
+        <br><br>
+        Add Assignment:<br>
+        <input type="number" placeholder="Received Points" name="pointsRec" step="1">
+        <input type="number" placeholder="Total Points" name="pointsTot" step="1">
+        <br>
+        <input class="hidden" type="button" onclick="funG()">
+        <br>
+        <input class="inputbutton" type="button" onclick="cg()" value="Add and Calculate">  
+        <br>
+        <input class="inputbutton" type="button" onclick="retGrade(), reset()" value="Reset">  
+      </form>
+    </div>
+    <div>
+      <p id="outgrade" class="output">Points: 0</p>
+      <p id="out2grade" class="output"></p>
+    </div>
+    <hr><br>
+    <div class="end" id="bot">
+      This grade calculator was created to allow students in Broward County Public Schools and Cypress Bay to see how an assignment will impact their grade. Input your current grade and the number of total points. Then you can add as many assignments as you wish by clicking add and calculate after each assignment. I am not responsible for any incorrect calculations or any implications this might have. THis has not been approved by anyone.
+      <br>
+      <br>
+      If you wish to contact me regarding issues with this website or possible future improvements, my email address is 
+      <a href="mailto:williamc1526@gmail.com">williamc1526@gmail.com</a>
+      <input class="hidden" type="button" onclick="fun2G()">
+      <br>
+    </div>
+    <br><br>
+    <div class="bar"></div>
+  </body>
+</html>

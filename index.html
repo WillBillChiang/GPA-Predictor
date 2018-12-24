@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico"/>
+    <title>GPA Predictor</title>
+    <meta name="google-site-verification" content="4nN9dXFWSy49NoKDzGPkaWFxGjM8-vjlmDCveMbwUsI" />
+    <meta name="keywords" content = "high school, GPA, gpa, broward, broward county, predictor, gpa predictor, GPA predictor, cypress bay, anfq123g67, grade, about, gpa calculator, grade calculator, semester, william, cypress bay grade, stress, calculator, predictor">
+    <meta name="language" content="English"> 
+    <meta charset="utf-8">
+    <meta name="description" content="This GPA predictor was created to allow students in Broward County Public Schools and Cypress Bay to calculate and predict how taking a class will impact their GPA.">
+    <meta name="author" content="William C">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <script src="script.js"></script>
+  <body>
+    <div class="bar"></div>
+    <br>
+    <h1 class="heading" id="top"> GPA Predictor </h1>
+    <nav>
+      <ul class = "pagebar">
+        <a class = "pages" href="about.html"> About Me </a></li>
+        <a class = "pages" href="grade.html"> Grade Calculator </a></li>
+        <a class = "pages" href="semester.html"> Semester Grade </a></li>
+      </ul>
+    </nav>
+    <hr>
+    <div class="input1">
+      <br>
+      <form id="current">
+        Current GPA:<br>
+        <input type="number" placeholder="Enter" step="0.1" name="cgpa"><br>
+        Current Number of Credits:<br>
+        <input type="number" placeholder="Enter" name="ccr" step=".5">
+        <br><br>
+        Add Classes:<br>
+        <input type="number" placeholder="Number of Credits" name="cra" step=".5">
+        <select id = "classes">
+               <option value = "0">College Level</option>
+               <option value = "1">Honors</option>
+               <option value = "2">Regular</option>
+               <option value = "3">Unweighted</option>
+               <option value = "4">Core Honors/College Level</option>
+               <option value = "5">Core Regular</option>
+        </select>
+        <select id = "grades">
+               <option value = "0">A</option>
+               <option value = "1">B+</option>
+               <option value = "2">B</option>
+               <option value = "3">C+</option>
+               <option value = "4">C</option>
+               <option value = "5">D+</option>
+               <option value = "6">D</option>
+               <option value = "7">F</option>
+        </select>
+        <br>
+        <input class="hidden" type="button" onclick="fun()">
+        <br>
+        <input class="inputbutton" type="button" onclick="cal()" value="Add and Calculate">  
+        <br>
+        <input class="inputbutton" type="button" onclick="ret(), reset()" value="Reset">  
+      </form>
+    </div>
+    <div>
+      <p id="out" class="output">Credits: 0</p>
+      <p id="out2" class="output"></p>
+    </div>
+    <hr><br>
+    <div class="end" id="bot">
+      This GPA predictor was created to allow students in Broward County Public Schools and Cypress Bay to see how taking a class will impact their GPA. Input your current GPA and the number of credits you have. Then you can add as many classes as you wish by clicking add and calculate after each class. I am not responsible for any incorrect calculations or any implications this might have. This has not been approved by anyone.
+      <br>
+      <br>
+      If you wish to contact me regarding issues with this website or possible future improvements, my email address is 
+      <a href="mailto:williamc1526@gmail.com">williamc1526@gmail.com</a>
+      <input class="hidden" type="button" onclick="fun2()">
+      <br>
+    </div>
+    <br><br>
+    <div class="bar"></div>
+  </body>
+</html>

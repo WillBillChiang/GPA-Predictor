@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico"/>
+    <title>Semester Grade Calculator</title>
+    <meta name="google-site-verification" content="4nN9dXFWSy49NoKDzGPkaWFxGjM8-vjlmDCveMbwUsI" />
+    <meta name="keywords" content = "high school, GPA, gpa, broward, broward county, predictor, gpa predictor, GPA predictor, cypress bay, grade, calculator, grade calculator, semester, semester grade calculator, sem cal, semester predictor, william, cypress bay grade, stress, calculator, predictor">
+    <meta name="language" content="English"> 
+    <meta charset="utf-8">
+    <meta name="description" content="This semester grade calculator was created to allow students in Broward County Public Schools and Cypress Bay to calculate and predict what their final semester grade would be.">
+    <meta name="author" content="William C">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <script src="script.js"></script>
+  <body>
+    <div class="bar"></div>
+    <br>
+    <h1 class="heading" id="topS"> Semester Grade Calculator </h1>
+    <nav>
+      <ul class = "pagebar">
+        <a class = "pages" href="about.html"> About Me </a></li>
+        <a class = "pages" href="index.html"> GPA Predictor </a></li>
+        <a class = "pages" href="grade.html"> Grade Calculator </a></li>
+      </ul>
+    </nav>
+    <hr> <br>
+    <div class="input1">
+      <form id="currentGradeS">
+        Quarter 1/3:<br>
+        <select id = "SgradesQ1">
+               <option value = "12">A</option>
+               <option value = "9.3">B+</option>
+               <option value = "9">B</option>
+               <option value = "6.3">C+</option>
+               <option value = "6">C</option>
+               <option value = "3.3">D+</option>
+               <option value = "3">D</option>
+               <option value = "0">F</option>
+        </select> <br>
+        Quarter 2/4:<br>
+        <select id = "SgradesQ2">
+               <option value = "12">A</option>
+               <option value = "9.3">B+</option>
+               <option value = "9">B</option>
+               <option value = "6.3">C+</option>
+               <option value = "6">C</option>
+               <option value = "3.3">D+</option>
+               <option value = "3">D</option>
+               <option value = "0">F</option>
+        </select> <br>
+        Midterm:<br>
+        <select id = "SgradesM">
+               <option value = "8">A</option>
+               <option value = "6.2">B+</option>
+               <option value = "6">B</option>
+               <option value = "4.2">C+</option>
+               <option value = "4">C</option>
+               <option value = "2.2">D+</option>
+               <option value = "2">D</option>
+               <option value = "0">F</option>
+        </select> <br>
+        <br>
+        <input class="inputbutton" type="button" onclick="gradeS()" value="Calculate">  
+        <br> 
+      </form>
+    </div>
+    <div>
+      <p id="outgradeS" class="output"></p>
+    </div>
+    <hr><br>
+    <div class="end" id="botS">
+      This semester grade calculator was created to allow students in Broward County Public Schools and Cypress Bay to see what their final semester grade would be. Input your current grades. I am not responsible for any incorrect calculations or any implications this might have. This has not been approved by anyone.
+      <br>
+      <br>
+      If you wish to contact me regarding issues with this website or possible future improvements, my email address is 
+      <a href="mailto:williamc1526@gmail.com">williamc1526@gmail.com</a>
+      <input class="hidden" type="button" onclick="funSG2()">
+      <br>
+    </div>
+    <br><br>
+    <div class="bar"></div>
+  </body>
+</html>
